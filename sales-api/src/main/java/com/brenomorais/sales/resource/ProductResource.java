@@ -7,19 +7,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.brenomorais.sales.model.Client;
-import com.brenomorais.sales.repository.Clients;
+import com.brenomorais.sales.model.Product;
+import com.brenomorais.sales.repository.Products;
 
 @RestController
-@RequestMapping("/clients")
-public class ClientResource {
-
+@RequestMapping("/products")
+public class ProductResource {
 	
 	@Autowired
-	private Clients clients;
+	private Products products;
 	
 	@GetMapping
-	public List<Client> listALLClients(){
-		return clients.findAll();
+	public List<Product> listAllProducts(){
+		return products.findAll();
 	}
+	
+	
+
 }
