@@ -8,5 +8,6 @@ public class SalesApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SalesApiApplication.class, args);
+		System.out.println("API Started");
 	}
 }
