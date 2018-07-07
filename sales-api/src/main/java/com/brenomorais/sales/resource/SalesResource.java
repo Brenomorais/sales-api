@@ -19,7 +19,7 @@ import com.brenomorais.sales.services.SaleService;
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/sales")
-public class SalesResources {
+public class SalesResource {
 	
 	@Autowired
 	private Sales sales;
