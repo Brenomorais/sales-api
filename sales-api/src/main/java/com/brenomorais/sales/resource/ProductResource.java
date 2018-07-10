@@ -34,6 +34,12 @@ public class ProductResource {
 		return products.buscarTodos();
 	}
 	
+	@GetMapping("/searchAllProduct")
+	public List<Product> searchAllProduct(){
+		return products.findAllProducts();
+	}
+	
+	
 	// Exemplo com os parametros URL: http://localhost:8080/products/searchByName?name=notebook
 	@GetMapping("/searchByName")
 	public List<Product> searchByName(@RequestParam String name){	
