@@ -7,8 +7,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.brenomorais.sales.model.Product;
+import com.brenomorais.sales.repository.queries.ProductsQueries;
 
-public interface Products extends JpaRepository<Product, Long> {
+public interface Products extends JpaRepository<Product, Long>, ProductsQueries {
 	
 	List<Product> findByName(String name); //pesquisa por nome
 	
